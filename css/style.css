@@ -1,0 +1,91 @@
+@charset "UTF-8";
+/*Обнуление*/
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+@font-face {
+  font-family: 'Gilroy';
+  src: url("../fonts/gilroy-light.eot");
+  /* IE 9 Compatibility Mode */
+  src: url("../fonts/gilroy-light.eot?#iefix") format("embedded-opentype"), url("../fonts/gilroy-light.woff2") format("woff2"), url("../fonts/gilroy-light.woff") format("woff"), url("../fonts/gilroy-light.ttf") format("truetype"), url("../fonts/gilroy-light.svg#gilroy-light") format("svg");
+  /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url("../fonts/gilroy-extrabold.eot");
+  /* IE 9 Compatibility Mode */
+  src: url("../fonts/gilroy-extrabold.eot?#iefix") format("embedded-opentype"), url("../fonts/gilroy-extrabold.woff2") format("woff2"), url("../fonts/gilroy-extrabold.woff") format("woff"), url("../fonts/gilroy-extrabold.ttf") format("truetype"), url("../fonts/gilroy-extrabold.svg#gilroy-extrabold") format("svg");
+  /* Chrome < 4, Legacy iOS */
+  font-weight: 800;
+}

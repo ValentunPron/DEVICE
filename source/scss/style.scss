@@ -1,0 +1,26 @@
+//---Подключение других библиотек---//
+@import "nullstyle.scss";
+//-------------------------------------
+//---Подключение шрифтов---//
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+@font-face {
+	font-family: 'Gilroy';
+	src: url('../fonts/gilroy-light.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/gilroy-light.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/gilroy-light.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/gilroy-light.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/gilroy-light.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/gilroy-light.svg#gilroy-light') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+@font-face {
+	font-family: 'Gilroy';
+	src: url('../fonts/gilroy-extrabold.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/gilroy-extrabold.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/gilroy-extrabold.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/gilroy-extrabold.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/gilroy-extrabold.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/gilroy-extrabold.svg#gilroy-extrabold') format('svg'); /* Chrome < 4, Legacy iOS */
+		font-weight: 800;
+}
+//-------------------------------------
+
