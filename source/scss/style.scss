@@ -23,4 +23,33 @@
 		font-weight: 800;
 }
 //-------------------------------------
+//---Глобалыние стили---//
+body {
+	font-family: 'Open Sans' 'Arial' sans-serif;
+	color: 	#464646;
+	font-size: 15px;
+}
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+}
 
+.content {
+	flex: 1 1 auto;
+}
+
+.container {
+	max-width: 1160px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+//----------------------------
+//---Header---//
+header {
+	background-color: orange;
+}
+.logo__menu {
+	font-family: 'Gilroy', sans-serif;
+	color: #000000;
+	font-size: 50px;
+}
