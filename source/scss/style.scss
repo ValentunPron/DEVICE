@@ -294,3 +294,33 @@ body {
 			font-size: 15px;
 		}
 }
+//--------------------------------
+//---filter---
+.filter {
+	margin-top: 110px;
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		flex-direction: row;
+
+	}
+
+	&__type {
+	}
+
+	&__imgBlock {
+		position: relative;
+		display: block;
+		width: 160px;
+		height: 160px;
+		background-color: rgba(240, 197, 46, 0.50);;
+	}
+
+	&__img {
+	}
+
+	&__title {
+	}
+}
+//-------------------------
