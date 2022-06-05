@@ -306,21 +306,45 @@ body {
 
 	}
 
-	&__type {
+	&__imgBlock:hover {
+		background-color: rgba(240, 197, 46, 1);
 	}
-
+	&__imgBlock:active {
+		background-color: rgba(240, 197, 46, 1);
+		.filter__img {
+			opacity: 0.75;
+		}
+	}
 	&__imgBlock {
+		transition: 0.3s;
+		box-shadow: 3px 2px 5px rgba(0, 0, 0, 0.25);
 		position: relative;
-		display: block;
+		margin-bottom: 35px;
+		line-height: 522px;
 		width: 160px;
 		height: 160px;
-		background-color: rgba(240, 197, 46, 0.50);;
+		background-color: rgba(240, 197, 46, 0.4);;
 	}
 
 	&__img {
+		transition: 0.2s;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		margin: auto;
 	}
 
 	&__title {
+		display: block;
+		max-width: 170px;
+		font-family: 'Gilroy', sans-serif;
+		font-weight: 800;
+		font-size: 18px;
+		color: #000;
+		line-height: 24px;
+		letter-spacing: 0.2px;
 	}
 }
 //-------------------------
