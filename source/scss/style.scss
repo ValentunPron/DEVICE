@@ -140,7 +140,7 @@ body {
 		left: 211px;
 	}
 
-	&__delivery {
+	.header__delivery {
 		padding-right: 50px;
 	}
 
@@ -266,11 +266,6 @@ body {
 			
 		}
 }
-.descriptiom {
-
-		&__buttons {
-		}
-}
 .charact {
 	display: flex;
 	margin-top: 40px;
@@ -348,3 +343,99 @@ body {
 	}
 }
 //-------------------------
+//---info---
+.info {
+	margin-top: 175px;
+	background-color: #e6e6e6;
+	min-height: 300px;
+	margin-bottom: 200px;
+	&_button {
+		transition: 0.5s;
+		z-index: 1;
+		background-color: transparent;
+		margin-bottom: 45px;
+		display: block;
+		position: relative;
+		top: -10px;
+
+		font-family: 'Gilroy', Arial, sans-serif;			
+		font-weight: 800;
+		font-size: 18px;
+		text-transform: uppercase;
+		letter-spacing: 3px;
+		color: #000;
+	}
+
+	&-none::after {
+		z-index: -1;
+		content:"";
+		position: relative;
+		display: block;
+		background-color: #f0c52e;
+		height: 8px;
+		width: 160px;
+		top: -14.5px;
+		margin: 0 auto;
+	}
+
+	&__active {
+
+		color:rgba(240, 197, 46, 0.88);
+		position: relative;
+		max-width: 350px;
+		padding: 10px 50% 10px 25px;
+		background-color: #000;
+		box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.6);
+	}
+
+	&__row {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	&__buttons {
+		position: relative;
+		flex: 0 1 40%;
+	}
+
+	&__buttons::after {
+		content: "";
+		display: block;
+		position: absolute;
+		box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+		background-color: #000;
+		width: 7px;
+		left: 76%;
+		height: 319px;
+		bottom: 20px;
+		
+	}
+
+	&__areatext {
+		flex: 0 1 40%;
+	}
+
+	&__title {
+		position: relative;
+		font-family: 'Gilroy', Arial, sans-serif;
+		font-size: 47px;
+		font-weight: 800;
+		color: #000000;
+		bottom: 27.5px;
+
+	}
+
+	&__text {
+		line-height: 1.75;
+		color: #464646;
+		max-width: 400px;
+	}
+
+	&__image {
+		position: relative;
+		text-align: center;
+		flex: 0 1 20%;
+		bottom: 15px;
+	}
+}
