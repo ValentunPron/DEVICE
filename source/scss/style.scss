@@ -94,7 +94,7 @@ body {
 //---Header---//
 
 .logo__menu {
-	position: absolute;
+	position: relative;
 	top: -25px;
 	padding-bottom: -25px;
 	font-family: 'Gilroy', sans-serif;
@@ -113,7 +113,7 @@ body {
 	background-color: rgba(240, 197, 46, 0.50);
 	padding: 0 60px;
 	&__nav {
-		padding-top: 50px;
+		padding-top: 20px;
 	}
 	&__button {
 		transition: 0.4s;
@@ -141,7 +141,7 @@ body {
 	}
 	&__link {
 		transition: 0.4s;
-		margin-top: 50px;
+		margin-top: 40px;
 		 a {
 			font-family: 'Gilroy', sans-serif;
 			text-transform: uppercase;
@@ -621,5 +621,101 @@ body {
 	flex: 0 1 50%;
 	
 }
+//---------------------------------
+//---Footer---
 
+.footer {
+	background-color: #464646;
+	height: 320px;
+	color: #fff;
+	&__row {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	&__block1 {
+		flex: 0 1 33.3%;
+	}
+
+	&__text {
+	}
+
+	&__block2 {
+		flex: 0 1 33.4%;
+	}
+
+	&__link {
+	}
+
+	&__social {
+	}
+
+	&__block3 {
+		flex: 0 1 33.3%;
+	}
+
+	&__button {
+
+		&_user {
+		}
+	}
+
+	&__login {
+	}
+
+	&__compare {
+	}
+
+	&__basket {
+	}
+
+	&__img {
+	}
+}
+
+.logo {
+
+	&__menu {
+	}
+}
+.yellow {
+}
+.social {
+
+	&__facebook {
+	}
+
+	&__instagram {
+	}
+
+	&__twitter {
+	}
+}
+.header {
+
+	&__button {
+	}
+}
+.login {
+
+	&__button {
+	}
+}
+.button-text {
+}
+.compare {
+
+	&__button {
+	}
+}
+.basket {
+
+	&__button {
+	}
+}
+
+.yellow {
+	color:rgba(240, 197, 46, 1);
+}
 

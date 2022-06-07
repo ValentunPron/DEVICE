@@ -158,7 +158,7 @@ body {
 }
 
 .logo__menu {
-  position: absolute;
+  position: relative;
   top: -25px;
   padding-bottom: -25px;
   font-family: 'Gilroy', sans-serif;
@@ -181,7 +181,7 @@ body {
 }
 
 .header__nav {
-  padding-top: 50px;
+  padding-top: 20px;
 }
 
 .header__button {
@@ -216,7 +216,7 @@ body {
 
 .header__link {
   transition: 0.4s;
-  margin-top: 50px;
+  margin-top: 40px;
 }
 
 .header__link a {
@@ -703,4 +703,33 @@ body {
   flex-direction: column;
   margin-left: 70px;
   flex: 0 1 50%;
+}
+
+.footer {
+  background-color: #464646;
+  height: 320px;
+  color: #fff;
+}
+
+.footer__row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer__block1 {
+  flex: 0 1 33.3%;
+}
+
+.footer__block2 {
+  flex: 0 1 33.4%;
+}
+
+.footer__block3 {
+  flex: 0 1 33.3%;
+}
+
+.yellow {
+  color: #f0c52e;
 }
