@@ -63,6 +63,7 @@ body {
 	letter-spacing: 0.5px;
 }
 .buttons {
+
 	transition: 0.5s;
 	z-index: 1;
 	background-color: transparent;
@@ -593,12 +594,13 @@ body {
 
 	&__button {
 		position: absolute;
-		bottom: -600px;
+		top: 485px;
 		max-width: 260px;
 		margin-top: 30px;
 	}
 
-	&__button
+	&__button {
+	}
 
 	&__map {
 		
@@ -625,52 +627,109 @@ body {
 //---Footer---
 
 .footer {
+	position: relative;
 	background-color: #464646;
 	height: 320px;
 	color: #fff;
 	&__row {
+		padding-top: 80px;
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: center;
 	}
 	&__block1 {
-		flex: 0 1 33.3%;
+		flex: 0 1 30%;
+	}
+
+	&__block1::after {
+		content: "";
+		position: absolute;
+		background-color: #f0c52e;
+		bottom: 55px;
+		width: 80px;
+		height: 7px;
 	}
 
 	&__text {
+				
+		font-size: 15px;
+		display: block;
+		margin-top: 10px;
 	}
 
+	&__text2 {
+		text-align: right;
+		
+		font-size: 15px;
+		display: block;
+		margin-top: 30px;
+	}
 	&__block2 {
-		flex: 0 1 33.4%;
+		flex: 0 1 40%;
 	}
 
 	&__link {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		transition: 0.4s;
+		margin-top: 30px;
+		 a {
+			font-family: 'Gilroy', sans-serif;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			font-weight: 800;
+			font-size: 18px;
+			 color: #fff;
+		 }
+	}
+	&__link:hover {
+		opacity: 0.75;
+	}
+	&__link:focus {
+		opacity: 0.4;
 	}
 
 	&__social {
-	}
-
-	&__block3 {
-		flex: 0 1 33.3%;
-	}
-
-	&__button {
-
-		&_user {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		margin-top: 75px;
+		li {
+			border-radius: 2222px;
+			background-color: #666;
+			padding: 3px 5px;
+			margin-right: 25px;
 		}
 	}
 
-	&__login {
+	&__block3 {
+		flex: 0 1 30%;
 	}
 
-	&__compare {
+	&__button_user {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		svg {
+			fill:rgba(240, 197, 46, 1);
+		}
+		.login__button {
+			fill:rgba(240, 197, 46, 1);
+		}
 	}
 
-	&__basket {
+	.button-text {
+		position: relative;
+		color: #fff;
+		top: -4px;
+		left: -10px;
 	}
 
 	&__img {
+		float: right;
+		margin-top: 80px;
 	}
 }
 
@@ -679,43 +738,43 @@ body {
 	&__menu {
 	}
 }
-.yellow {
-}
-.social {
 
-	&__facebook {
-	}
-
-	&__instagram {
-	}
-
-	&__twitter {
-	}
-}
-.header {
-
-	&__button {
-	}
-}
-.login {
-
-	&__button {
-	}
-}
-.button-text {
-}
-.compare {
-
-	&__button {
-	}
-}
-.basket {
-
-	&__button {
-	}
-}
 
 .yellow {
 	color:rgba(240, 197, 46, 1);
 }
 
+//-----------------------------------
+//---JavaScript---
+.active {
+	z-index: 2;
+	display: block;
+}
+.none {
+	left: -300px;
+}
+.catalog__menu {
+	z-index: 1;
+	position: relative;
+	margin-top: 37.5px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-grow: 1;
+	max-width: 570px;
+	height: 120px;
+	background-color: rgba(236, 185, 0, 1);;
+	justify-content: space-between;
+
+	border: 1px solid red;
+	li {
+		margin-bottom: -10px;
+	}
+	a {
+		font-family: 'Open Sans' 'Arial' sans-serif;
+		font-weight: 500;
+		font-size: 15px;
+		letter-spacing: 1px;
+		text-transform: none;
+		color: #000;
+	}
+}

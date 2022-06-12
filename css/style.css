@@ -681,12 +681,12 @@ body {
 
 .connection__button {
   position: absolute;
-  bottom: -600px;
+  top: 485px;
   max-width: 260px;
   margin-top: 30px;
 }
 
-.connection__button .connection__map {
+.connection__map {
   margin-top: 10px;
 }
 
@@ -706,12 +706,14 @@ body {
 }
 
 .footer {
+  position: relative;
   background-color: #464646;
   height: 320px;
   color: #fff;
 }
 
 .footer__row {
+  padding-top: 80px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -719,17 +721,140 @@ body {
 }
 
 .footer__block1 {
-  flex: 0 1 33.3%;
+  flex: 0 1 30%;
+}
+
+.footer__block1::after {
+  content: "";
+  position: absolute;
+  background-color: #f0c52e;
+  bottom: 55px;
+  width: 80px;
+  height: 7px;
+}
+
+.footer__text {
+  font-size: 15px;
+  display: block;
+  margin-top: 10px;
+}
+
+.footer__text2 {
+  text-align: right;
+  font-size: 15px;
+  display: block;
+  margin-top: 30px;
 }
 
 .footer__block2 {
-  flex: 0 1 33.4%;
+  flex: 0 1 40%;
+}
+
+.footer__link {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  transition: 0.4s;
+  margin-top: 30px;
+}
+
+.footer__link a {
+  font-family: 'Gilroy', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 800;
+  font-size: 18px;
+  color: #fff;
+}
+
+.footer__link:hover {
+  opacity: 0.75;
+}
+
+.footer__link:focus {
+  opacity: 0.4;
+}
+
+.footer__social {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 75px;
+}
+
+.footer__social li {
+  border-radius: 2222px;
+  background-color: #666;
+  padding: 3px 5px;
+  margin-right: 25px;
 }
 
 .footer__block3 {
-  flex: 0 1 33.3%;
+  flex: 0 1 30%;
+}
+
+.footer__button_user {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer__button_user svg {
+  fill: #f0c52e;
+}
+
+.footer__button_user .login__button {
+  fill: #f0c52e;
+}
+
+.footer .button-text {
+  position: relative;
+  color: #fff;
+  top: -4px;
+  left: -10px;
+}
+
+.footer__img {
+  float: right;
+  margin-top: 80px;
 }
 
 .yellow {
   color: #f0c52e;
+}
+
+.active {
+  z-index: 2;
+  display: block;
+}
+
+.none {
+  left: -300px;
+}
+
+.catalog__menu {
+  z-index: 1;
+  position: relative;
+  margin-top: 37.5px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  max-width: 570px;
+  height: 120px;
+  background-color: #ecb900;
+  justify-content: space-between;
+  border: 1px solid red;
+}
+
+.catalog__menu li {
+  margin-bottom: -10px;
+}
+
+.catalog__menu a {
+  font-family: 'Open Sans' 'Arial' sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 1px;
+  text-transform: none;
+  color: #000;
 }
