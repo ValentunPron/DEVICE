@@ -240,23 +240,24 @@ body {
 	font-size: 160px;
 	content: "";
 	position: absolute;
-	top: 40px;
-	left: 80.5%;
+	top: 215px;
+	right: 15%;
 }
 //--------------------------------------
-//---slaid---
-.selfi {
+//---slide---
+.slide {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	&__photo {
+		display: flex;
+		justify-content: center;
 		flex: 0 1 47.5%;
 		position: relative;
 	}
 	&__image {
 		position: absolute;
-		top: -110px;
-		left: 17.5%
+		top: -75px;
 	}
 }
 .description {

@@ -328,25 +328,26 @@ body {
   font-size: 160px;
   content: "";
   position: absolute;
-  top: 40px;
-  left: 80.5%;
+  top: 215px;
+  right: 15%;
 }
 
-.selfi {
+.slide {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
-.selfi__photo {
+.slide__photo {
+  display: flex;
+  justify-content: center;
   flex: 0 1 47.5%;
   position: relative;
 }
 
-.selfi__image {
+.slide__image {
   position: absolute;
-  top: -110px;
-  left: 17.5%;
+  top: -75px;
 }
 
 .description {
