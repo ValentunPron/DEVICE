@@ -373,7 +373,6 @@ body {
   height: 30px;
   transition: 0.45s;
   z-index: 1;
-  margin-top: 45px;
   display: block;
   position: relative;
   font-family: 'Gilroy', Arial, sans-serif;
@@ -409,6 +408,14 @@ body {
   left: -45px;
 }
 
+.description__buttons {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .description__detal:focus::after {
   opacity: 0.5;
   z-index: -1;
@@ -420,6 +427,35 @@ body {
   width: 220px;
   top: -23.5px;
   left: -45px;
+}
+
+.description__number {
+  position: relative;
+  background-color: #fff;
+  width: 15px;
+  height: 15px;
+}
+
+.description__number::before {
+  top: 0;
+  right: 400%;
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #000;
+  border-radius: 100%;
+}
+
+.description__active::after {
+  top: 4px;
+  right: 427.5%;
+  content: "";
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border: 1px solid #000;
+  border-radius: 100%;
 }
 
 .charact {

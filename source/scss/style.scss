@@ -282,7 +282,6 @@ body {
 			height: 30px;
 			transition: 0.45s;
 			z-index: 1;
-			margin-top: 45px;
 			display: block;
 			position: relative;
 
@@ -318,6 +317,14 @@ body {
 			top: -23.5px;
 			left: -45px;
 		}
+
+		&__buttons {
+			margin-top: 50px;
+			display: flex;
+			align-items: center;
+			flex-direction: row;
+			justify-content: space-between;
+		}
 		&__detal:focus::after {
 			opacity: 0.5;
 			z-index: -1;
@@ -331,7 +338,31 @@ body {
 			left: -45px;
 		}
 		&__number {
-			
+			position: relative;
+			background-color: #fff;
+			width: 15px;
+			height: 15px;
+		}
+		&__number::before {
+			top: 0;
+			right: 400%;
+			content: "";
+			position: absolute;
+			width: 15px;
+			height: 15px;
+			border: 1px solid #000;
+			border-radius: 100%;
+		}
+		&__active::after {
+			top: 4px;
+			right: 427.5%;
+			content: "";
+			position: absolute;
+			width: 7px;
+			height: 7px;
+			border: 1px solid #000;
+			border-radius: 100%;
+
 		}
 }
 
