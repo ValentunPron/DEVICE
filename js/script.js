@@ -145,4 +145,27 @@ window.addEventListener('DOMContentLoaded', () => {
 		'Квадрокоптеры',
 		'.filter .filter__list'
 	).addItemList();
+
+	// Maps
+
+	const mapButton = document.querySelectorAll('.map__button'),
+		  mapBig = document.querySelector('.connection__bigMap');
+	function activeMap() {
+		if(mapBig.classList[1] == 'none') {
+			mapBig.classList.remove('none');
+			mapBig.classList.add('active')
+		}
+		else {
+			mapBig.classList.remove('active');
+			mapBig.classList.add('none')
+		}
+	}
+
+	mapButton.forEach(i => {
+		console.log(i);
+		i.addEventListener('click', event => {
+			event.preventDefault();
+			activeMap();
+		})
+	})
 })

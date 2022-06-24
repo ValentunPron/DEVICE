@@ -638,6 +638,13 @@ body {
 		
 		margin-top: 10px;
 	}
+	&__bigMap {
+		position: absolute;
+		left: -40px;
+		right: 0;
+		top: -30px;
+		margin: 0 auto;
+	}
 }
 
 .about_us {
