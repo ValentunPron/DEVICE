@@ -826,3 +826,128 @@ body {
 		opacity: 0.5;
 	}
 }
+
+.write_us {
+	z-index: 100;
+	background-color: rgba(0, 0, 0, 0.50);
+	position: fixed;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	&__row {
+		padding: 75px 100px;
+		top: 0px;
+		bottom: 0px;
+		left: 0px;
+		right: 0px;
+		position: fixed;
+		margin: auto auto;
+		background-color: #fff;
+		border: 1px solid rgba(62, 62, 62, 0.3);
+		box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4) ;
+		width: 960px;
+		height: 540px;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	&__flex {
+		display: flex;
+		width: 780px;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	&__menu {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__input {
+		margin-top: 10px;
+		width: 350px;
+		padding: 15px 20px;
+		margin-left: 15px;
+		background-color: rgba(0, 0, 0, 0.15);
+		font-family: 'Open Sans' 'Arial' sans-serif;
+		color:rgba(0, 0, 0, 1);
+		font-size: 18px;
+	}
+	&__input::placeholder {
+		font-family: 'Open Sans' 'Arial' sans-serif;
+		font-size: 16px;
+	}
+	&__placeholder {
+		margin-top: 50px;
+	}
+	&__textarea {
+		resize: none;
+		margin-top: 10px;
+		width: 765px;
+		height: 150px;
+		padding: 5px 10px;
+		margin-left: 15px;
+		background-color: rgba(0, 0, 0, 0.15);
+		font-family: 'Open Sans' 'Arial' sans-serif;
+		color:rgba(0, 0, 0, 1);
+		font-size: 18px;
+	}
+	&__textarea::placeholder {
+		font-family: 'Open Sans' 'Arial' sans-serif;
+		font-size: 16px;
+	}
+
+	&__sumbit {
+		margin-top: 75px;
+	}
+	&__exit {
+		transition: 0.3s;
+		position: relative;
+		top: -520px;
+		left: 780px;
+		border-radius: 100%;
+		background-color: rgba(240, 197, 46, 0.5);
+		height: 56px;
+		width: 56px;
+	}
+	&__exit:hover {
+		background-color: rgba(240, 197, 46, 0.75);
+	}
+	&__exit:focus {
+		background-color: rgba(240, 197, 46, 1);
+	}
+	&__exit::after {
+		content: "";
+		display: block;
+		top: 0px;
+		bottom: 0px;
+		left: 0px;
+		right: 0px;
+		margin: auto auto;
+		transform: rotate(45deg);
+		background-color: #fff;
+		position: absolute;
+		height: 30px;
+		width: 2px;
+	}
+	&__exit::before {
+		content: "";
+		display: block;
+		top: 0px;
+		bottom: 0px;
+		left: 0px;
+		right: 0px;
+		margin: auto auto;
+		transform: rotate(-45deg);
+		background-color: #fff;
+		position: absolute;
+		height: 30px;
+		width: 2px;
+	}
+}
+.title {
+	font-family: 'Gilroy', Arial, sans-serif;
+	font-weight: 800;
+	font-size: 18px;
+	color: #000;
+
+}
