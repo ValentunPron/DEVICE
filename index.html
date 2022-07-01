@@ -406,16 +406,17 @@
 					<div class="write_us__flex">
 						<div class="write_us__menu">
 							<h2 class="title">Ваше имя:</h2>
-							<input class="write_us__input" type="text" placeholder="Имя Фамилия">
+							<input class="write_us__input" required name="name" type="text" placeholder="Имя Фамилия">
 						</div>
 						<div class="write_us__menu">
 							<h2 class="title">Ваш е-mail:</h2>
-							<input class="write_us__input" type="text" placeholder="email@example.com">
+							<input class="write_us__input" required name="email" type="text"
+								placeholder="email@example.com">
 						</div>
 					</div>
 					<div class="write_us__placeholder">
 						<h2 class="title">Текст письма:</h2>
-						<textarea class="write_us__textarea" name="" id="" cols="20" rows="20"
+						<textarea class="write_us__textarea" required name="text"
 							placeholder="В свободной форме"></textarea>
 					</div>
 					<button type="submit" class="buttons write_us__sumbit">Отправить</button>
